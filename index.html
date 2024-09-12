@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="robin">
+    <meta name="keywords" content="portfolio,html,robin">
+    <meta name="description" content="">
     <title>my-portfolio</title>
+
+    <!--Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.
+    com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiq
+    LQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L
+    4JJg==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <!--Styling-->
+    <style>
+        body{
+            background-color:blanchedalmond;
+            font-family: "Oswald", sans-serif;
+
+        }
+    </style>
 </head>
 <body>
         <!--Section: navbar-->
-        <nav>
+    <header>
             <!--Relative link-->
             <ul>
                 <li><a href="#intro">Introduction</a></li>
@@ -13,9 +42,11 @@
                 <li><a href="#skills">My Skills</a></li>
                 <li><a href="#contact">My Contact</a></li>
             </ul>
-        </nav>
-
-    <header id="intro">
+    </header>
+ 
+    <main>
+    <!--Section: intro-->
+    <section id="intro">
         <h1>Robin</h1>
 
         <!--absolute link-->
@@ -23,7 +54,7 @@
         alt="Robin" height="200"/></a>
 
         <p><mark>I am a student of University of Rajshahi.</mark></p>
-    </header>
+    </section>
 
     <!--section: about me-->
     <section id="about me">
@@ -46,15 +77,14 @@
         <tbody>
             <tr>
                 <td>C</td>
-                <td>Begineer</td>
+                <td rowspan="2">Begineer</td>
             </tr>
             <tr>
                 <td>Git & Github</td>
-                <td>Expart</td>
             </tr>
             <tr>
                 <td>HTML</td>
-                <td>Beginner</td>
+                <td>Expart</td>
             </tr>
         </tbody>
     </table>
@@ -66,12 +96,44 @@
             <!--defination description-->
             <dd>HTML is a markup language</dd>
         </dl>
+
+        <div>
+            <h3>Skill Progress</h3>
+            <div>
+                <label for="htmlProgress">HTML: </label>
+                <progress id="htmlProgress" value="30" max="100">30</progress>    
+            </div>
+    
+            <div>
+                <label for="cssProgress">CSS: </label>
+                <progress id="cssProgress" value="0" max="100">0</progress>    
+            </div>
+    
+            <div>
+                <label for="JavaScripts">JavaScript: </label>
+                <progress id="JavaScripts" value="0" max="100">0</progress>    
+            </div>
+        </div>
+
+        <div>
+            <h3>Experiance Level</h3>
+            <label for="experiancelevel">Experiance: </label>
+            <meter id="experiancelevel" min="0" max="10" value="1">
+            1 year experiance </meter>
+        </div>
     </secrion>
 
+    <section>
+        <video width="320" controls>
+            <source src="./videos/Viral_August_Month_2024(480p).mp4" />
+            your browser do not support this type of <video src=""></video>
+        </video>
+    </section>
     <!--Section: Contact-->
     <section id="contact">
         <h2>Contact Me</h2>
-        <form>
+        <form action="https://formspree.io/f/mzzpqrvz"
+        method="POST">
             <div>
                 <label for="name">Name : </label>
                 <input type="text" id="name" name="name" required/>
@@ -79,7 +141,34 @@
 
             <div>
                 <label for="email">Email: </label>
-                <input type="text" id="email" email="email" required/>
+                <input type="text" id="email" name="email" required/>
+            </div>
+
+            <div>
+                <label for="age">Age: </label>
+                <input type="number"id="age" name="age"
+                min="20" max="40" required/>
+            </div>
+
+            <div>
+                <label for="website">Website: </label>
+                <input type="url" id="website" name="website"
+                pattern="https://.+"/>
+            </div>
+
+            <div>
+                <label for="image">Upload Image: </label>
+                <input type="file" id="image" name="image"
+                accept="image/*" />
+            </div>
+
+            <div>
+                <label for="subject">Subject: </label>
+                <select name="subject" id="subject">
+                    <option value="inquiry">Inquiry</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="job">Job Opportunity</option>
+                </select>
             </div>
           
             <div>
@@ -93,13 +182,32 @@
 
         </form>
     </section>
+    </main>
 
-    <!--Section: footer-->
+    <!--Footer-->
     <footer>
         <p>Copyright reserved by &copy; Robin2024</p>
         <p>Developed with &hearts;</p>
         <a href="tel:01960945517">Call Me</a>
         <a href="mailto:mdr143620@gmail.com">Email Me</a>
+
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=
+            !4v1726168819257!6m8!1m7!1s7ZY5SWnVCuLHtehTu2c2ow!
+            2m2!1d24.08902874522735!2d90.80859595412815!3f293.
+            16852!4f0!5f0.7820865974627469" title="my home map" width="300" 
+            height="200" style="border:0;" allowfullscreen="" 
+            loading="lazy" referrerpolicy="no-referrer-when-
+            downgrade"></iframe>
+        </div>
+
+        <div>
+         <!--Font awsome icon-->
+        <h2>Follow Me</h2>
+        <a href="https://www.facebook.com/profile.php?id=61557476379704" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+        Facebook Account</a>
+        </div>
     </footer>
 
 </body>

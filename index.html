@@ -20,33 +20,27 @@
 
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"     crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto   +Serif+Old+Uyghur&family=Roboto:ital,wght@0,100;0,300;0,400;   0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900& display=swap" rel="stylesheet">
 
-    <!--Styling-->
-    <style>
-        body{
-            background-color:blanchedalmond;
-            font-family: "Oswald", sans-serif;
-
-        }
-    </style>
+    <!-- CSS link with HTML-->
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
         <!--Section: navbar-->
     <header>
             <!--Relative link-->
             <ul>
-                <li><a href="#intro">Introduction</a></li>
-                <li ><a href="#about me">About Me</a></li>
-                <li><a href="#skills">My Skills</a></li>
-                <li><a href="#contact">My Contact</a></li>
+                <li><a href="#intro" class="nav-link">Introduction</a></li>
+                <li ><a href="#about" class="nav-link">About Me</a></li>
+                <li><a href="#skills" class="nav-link">My Skills</a></li>
+                <li><a href="#contact" class="nav-link">My Contact</a></li>
             </ul>
     </header>
  
     <main>
         <!--Section: intro-->
-        <section id="intro">
+        <section id="intro" class="card">
         <h1>Robin</h1>
 
         <!--absolute link-->
@@ -57,17 +51,17 @@
         </section>
 
         <!--section: about me-->
-        <section id="about me">
+        <section id="about" class="card">
         <h2>About Me</h2>
         <p><strong>Experiace:</strong> 15 years of experiance in study.</p>
         <p><strong>Education:</strong> B.Sc in Information and Communication Engineering. </p>
         </section>
 
         <!--Section: Skills-->
-        <section id="skills">
+        <section id="skills" class="card">
         <h2>Skills</h2>
     <!--Table-->
-    <table border="1" cellpadding="5" cellspacing="0">
+    <table>
         <thead>
             <tr>
                 <th>Technology</th>
@@ -96,39 +90,8 @@
             <!--defination description-->
             <dd>HTML is a markup language</dd>
         </dl>
-
-        <div>
-            <h3>Skill Progress</h3>
-            <div>
-                <label for="htmlProgress">HTML: </label>
-                <progress id="htmlProgress" value="30" max="100">30</progress>    
-            </div>
-    
-            <div>
-                <label for="cssProgress">CSS: </label>
-                <progress id="cssProgress" value="0" max="100">0</progress>    
-            </div>
-    
-            <div>
-                <label for="JavaScripts">JavaScript: </label>
-                <progress id="JavaScripts" value="0" max="100">0</progress>    
-            </div>
-        </div>
-
-        <div>
-            <h3>Experiance Level</h3>
-            <label for="experiancelevel">Experiance: </label>
-            <meter id="experiancelevel" min="0" max="10" value="1">
-            1 year experiance </meter>
-        </div>
         </section>
 
-        <section>
-        <video width="320" controls>
-            <source src="./videos/Viral_August_Month_2024(480p).mp4" type="video/mp4"/>
-            your browser do not support this type of video.
-        </video>
-        </section>
         <!--Section: Contact-->
         <section id="contact">
         <h2>Contact Me</h2>
@@ -235,9 +198,13 @@
         <div>
          <!--Font awsome icon-->
         <h2>Follow Me</h2>
-        <a href="https://www.facebook.com/profile.php?id=61557476379704" target="_blank">
-        <i class="fa-brands fa-facebook"></i>
-        Facebook Account</a>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=61557476379704" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                        Facebook Account</a>
+                </li>
+            </ul>
         </div>
     </footer>
 
